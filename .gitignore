@@ -127,6 +127,12 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+qualitiycheck_venv/
+
+
+# Note book and data set
+dataset/
+Notebook/
 
 # Spyder project settings
 .spyderproject
