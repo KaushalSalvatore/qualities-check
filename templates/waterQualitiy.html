@@ -58,13 +58,13 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/wine_qualitiy">Wine Qualitiy</a>
+                    <a class="nav-link" href="/wineQualitiy">Wine Qualitiy</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/air_qualitiy">Air Qualitiy</a>
+                    <a class="nav-link" href="/airQualitiy">Air Qualitiy</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/water_qualitiy">Water Qualitiy</a>
+                    <a class="nav-link" href="/waterQualitiy">Water Qualitiy</a>
                   </li>
                 </ul>
                 </div>
@@ -80,53 +80,47 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <form>
+          <form action="{{ url_for('waterQualitiy') }}" method="POST">
             <h4>
-              BOOK <span>APPOINTMENT</span>
+              WATER <span>PORTABILITY</span>
             </h4>
             <div class="form-row ">
               <div class="form-group col-lg-4">
-                <label for="inputPatientName">Patient Name </label>
-                <input type="text" class="form-control" id="inputPatientName" placeholder="">
+                <input class="form-control" id="ph" name="ph" placeholder="PH(Potential of Hydrogen)" required>
               </div>
               <div class="form-group col-lg-4">
-                <label for="inputDoctorName">Doctor's Name</label>
-                <select name="" class="form-control wide" id="inputDoctorName">
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                </select>
+                <input class="form-control" id="Hardness" name="Hardness" placeholder="Hardness" required>
               </div>
               <div class="form-group col-lg-4">
-                <label for="inputDepartmentName">Department's Name</label>
-                <select name="" class="form-control wide" id="inputDepartmentName">
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                  <option value="Normal distribution ">Normal distribution </option>
-                </select>
+                <input class="form-control" id="Solids" name="Solids" placeholder="Solids" required>
               </div>
             </div>
             <div class="form-row ">
               <div class="form-group col-lg-4">
-                <label for="inputPhone">Phone Number</label>
-                <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
+                <input class="form-control" id="Chloramines" name="Chloramines" placeholder="Chloramines" required>
               </div>
               <div class="form-group col-lg-4">
-                <label for="inputSymptoms">Symptoms</label>
-                <input type="text" class="form-control" id="inputSymptoms" placeholder="">
+                <input class="form-control" id="Sulfate" name="Sulfate" placeholder="Sulfate" required>
               </div>
               <div class="form-group col-lg-4">
-                <label for="inputDate">Choose Date </label>
-                <div class="input-group date" id="inputDate" data-date-format="mm-dd-yyyy">
-                  <input type="text" class="form-control" readonly>
-                  <span class="input-group-addon date_icon">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                  </span>
-                </div>
+                <input class="form-control" id="Conductivity" name="Conductivity" placeholder="Conductivity" required>
               </div>
             </div>
+            <div class="form-row ">
+              <div class="form-group col-lg-4">
+                <input class="form-control" id="Organic_carbon" name="Organic_carbon" placeholder="Organic Carbon" required>
+              </div>
+              <div class="form-group col-lg-4">
+                <input class="form-control" id="Trihalomethanes" name="Trihalomethanes" placeholder="Trihalomethanes" required>
+              </div>
+              <div class="form-group col-lg-4">
+                <input class="form-control" id="Turbidity" name="Turbidity" placeholder="Turbidity" required>
+              </div>
+            </div>
+          
+           
             <div class="btn-box">
-              <button type="submit" class="btn ">Submit Now</button>
+              <button type="submit" class="btn " type="submit">Submit Now</button>
             </div>
           </form>
         </div>
