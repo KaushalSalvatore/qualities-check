@@ -31,17 +31,17 @@ This is a Machine Learning Project used to predict quality of Wine , air and wat
 ```bash
     1.2 Data Attribute Information:
     1.2.1 - fixed acidity
-    2.2.2 - volatile acidity
-    3.2.3 - citric acid
-    4.2.4 - residual sugar
-    5.2.5 - chlorides
-    6.2.6 - free sulfur dioxide
-    7.2.7 - total sulfur dioxide
-    8.2.8 - density
-    9.2.9 - pH
-    10.2.10 - sulphates
-    11.2.11 - alcohol
-    12.2.12 - quality (score between 0 and 10)
+    1.2.2 - volatile acidity
+    1.2.3 - citric acid
+    1.2.4 - residual sugar
+    1.2.5 - chlorides
+    1.2.6 - free sulfur dioxide
+    1.2.7 - total sulfur dioxide
+    1.2.8 - density
+    1.2.9 - pH
+    1.2.10 - sulphates
+    1.2.11 - alcohol
+    1.2.12 - quality (score between 0 and 10)
 
 ```
 
