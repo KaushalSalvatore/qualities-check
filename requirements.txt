@@ -7,3 +7,4 @@ flask
 flask_cors
 ipykernel
 xgboost
+gunicorn
